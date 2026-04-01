@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Philippine Wildlife Conservation</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9') no-repeat center center/cover;
+      font-family: Arial, sans-serif;
+    }
+
+    .overlay {
+      background: rgba(255,255,255,0.85);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* NAVBAR */
+.nav-container {
+  background: #198754;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+/* Menu */
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: none;
+}
+
+.nav-menu li {
+  margin: 10px 0;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+
+#menu-toggle:checked + .menu-icon + .nav-menu {
+  display: block;
+}
+
+
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+    .main-card {
+      max-width: 400px;
+      border-radius: 12px;
+      border: 2px solid #333;
+      padding: 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .title-line {
+      width: 50px;
+      height: 3px;
+      background: green;
+      margin: 10px auto 20px;
+    }
+
+    .animal-card {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .animal-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .animal-name {
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      background: rgba(0,0,0,0.4);
+      padding: 3px;
+    }
+
+    .scientific {
+      font-size: 12px;
+      color: gray;
+      margin-top: 3px;
+    }
+
+    .btn-green {
+      background: #198754;
+      color: white;
+      border-radius: 8px;
+      padding: 8px 20px;
+    }
+
+    .btn-green:hover {
+      background: #157347;
+    }
+  </style>
+</head>
+
+<body>
+<!-- NAVBAR (NO JS) -->
+<div class="nav-container">
+
+  <div class="logo">PLMun Wildlife Conservation Hub</div>
+
+  <!-- Hidden checkbox -->
+  <input type="checkbox" id="menu-toggle">
+
+  <!-- Hamburger -->
+  <label for="menu-toggle" class="menu-icon">
+    ☰
+  </label>
+
+  <!-- Menu -->
+  <ul class="nav-menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+</div>
+
+<div class="overlay">
+  <div class="main-card">
+
+    <h4>Philippine Wildlife<br>Conservation</h4>
+    <div class="title-line"></div>
+
+    <p style="font-size: 13px;">
+      The Philippines is home to some of the world's most unique and endangered species.
+      Learn how we can protect them for future generations.
+    </p>
+
+    <hr>
+
+    <h6><b>LIST OF ENDANGERED<br>ANIMALS IN THE PHILIPPINES</b></h6>
+
+    <hr>
+
+    <div class="row g-3">
+
+      <!-- Animal 1 -->
+      <div class="col-6">
+  <a href="egi.html" style="text-decoration: none; color: inherit;">
+    
+    <div class="animal-card">
+      <img src="images/egi.jpg">
+      <div class="animal-name">Philippine Eagle</div>
+    </div>
+
+    <div class="scientific">Pithecophaga jefferyi</div>
+
+  </a>
+</div>
+
+      <!-- Animal 2 -->
+      <div class="col-6">
+  <a href="tamaraw.html" style="text-decoration: none; color: inherit;">
+    
+    <div class="animal-card">
+      <img src="images/tamaraw.jpg">
+      <div class="animal-name">Tamaraw</div>
+    </div>
+
+    <div class="scientific">Bubalus mindorensis</div>
+
+  </a>
+</div>
+
+      <!-- Animal 3 -->
+     <div class="col-6">
+        <a href="tarsier.html" style="text-decoration: none; color: inherit;">
+        <div class="animal-card">
+          <img src="images/tarsier.jpg">
+          <div class="animal-name">Philippine Tarsier</div>
+        </div>
+        <div class="scientific">Tarsius syrichta</div>
+
+        </a>
+      </div>
+
+      <!-- Animal 4 -->
+      <div class="col-6">
+        <a href="dugong.html" style="text-decoration: none; color: inherit;">
+        <div class="animal-card">
+          <img src="images/dugong.jpg">
+          <div class="animal-name">Dugong</div>
+        </div>
+        <div class="scientific">Dugong dugon</div>
+
+        </a>
+      </div>
+
+      <!-- Animal 5 -->
+      <div class="col-6">
+  <a href="turtle.html" style="text-decoration: none; color: inherit;">
+    
+    <div class="animal-card">
+      <img src="images/turtle.jpg">
+      <div class="animal-name">Green Sea Turtle</div>
+    </div>
+
+    <div class="scientific">Chelonia mydas</div>
+
+  </a>
+</div>
+
+      <!-- Animal 6 -->
+      <div class="col-6">
+  <a href="deer.html" style="text-decoration: none; color: inherit;">
+    
+    <div class="animal-card">
+      <img src="images/deer.jpg">
+      <div class="animal-name">Spotted Deer</div>
+    </div>
+
+    <div class="scientific">Rusa alfredi</div>
+
+  </a>
+</div>
+
+       <!-- Animal 7 -->
+      <div class="col-6">
+        <a href="croc.html" style="text-decoration: none; color: inherit;">
+        <div class="animal-card">
+          <img src="images/croc.jpg">
+          <div class="animal-name">Philippine Crocodile</div>
+        </div>
+        <div class="scientific">Crocodylus mindorensis</div>
+
+        </a>
+      </div>
+
+       <!-- Animal 8 -->
+      <div class="col-6">
+  <a href="pangolin.html" style="text-decoration: none; color: inherit;">
+    
+    <div class="animal-card">
+      <img src="images/pangolin.jpg">
+      <div class="animal-name">Philippine Pangolin</div>
+    </div>
+
+    <div class="scientific">Manis pentadactyla</div>
+
+  </a>
+</div>
+
+    <br>
+
+  <a href="gallery.html" class="btn btn-green">View Full Gallery</a>
+
+  </div>
+</div>
+
+</body>
+</html>
